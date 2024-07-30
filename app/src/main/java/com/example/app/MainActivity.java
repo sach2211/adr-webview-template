@@ -18,11 +18,12 @@ public class MainActivity extends Activity {
         mWebView = findViewById(R.id.activity_main_webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
         mWebView.setWebViewClient(new MyWebViewClient());
 
         // REMOTE RESOURCE
-        // mWebView.loadUrl("https://example.com");
-
+         mWebView.loadUrl("https://www.notion.so/sachinchopra/Sachin-Cheshta-f49709e60d4f48288a237ac787fcd06b");
+        // https://bitly.cx/lxj4C
         // LOCAL RESOURCE
         // mWebView.loadUrl("file:///android_asset/index.html");
     }
